@@ -6,7 +6,7 @@ var cors = require('cors');
 app.use(
     cors({
         credentials: true,
-        origin: 'https://levi-heroku-api.herokuapp.com/'
+        origin: 'https://levi-heroku-api.herokuapp.com'
     })
 );
 app.options('*', cors());
