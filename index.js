@@ -8,6 +8,9 @@ app.use(
         origin: 'https://levi-heroku-api.herokuapp.com'
     })
 );
+app.use(function (req, res; next) {
+	res.header('Access-Control-Allow-Origin', "https://levi/heroku-api.herokuapp.com");
+	res.header('Access-Control-Allow-Headers',true);
 app.options('*', cors());
 
 app.get('/', (req, res) => res.send('I modified this api.'));
