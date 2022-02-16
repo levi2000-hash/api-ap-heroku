@@ -1,11 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 var cors = require('cors');
 
 app.use(
     cors({
         credentials: true,
-        origin: 'https://brave-boyd-6c3c10.netlify.app'
+        origin: 'https://levi-heroku-api.herokuapp.com/'
     })
 );
 app.options('*', cors());
