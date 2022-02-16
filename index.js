@@ -9,7 +9,7 @@ app.use(
     })
 );
 app.use(function (req, res; next) {
-	res.header('Access-Control-Allow-Origin', "https://levi/heroku-api.herokuapp.com");
+	res.header('Access-Control-Allow-Origin', "https://620cf7e335dfde1562566993--dazzling-murdock-4e663b.netlify.app/");
 	res.header('Access-Control-Allow-Headers',true);
 app.options('*', cors());
 
